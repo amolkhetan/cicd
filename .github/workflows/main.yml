@@ -25,5 +25,5 @@ jobs:
          script: |
            whoami
            pwd
-           ls -al
+           ls -lrt
            mkdir amol
