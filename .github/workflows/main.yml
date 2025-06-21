@@ -24,4 +24,12 @@ jobs:
          port: 22
          source: "./"
          target: "./"
-           
+    - name: Move files
+      uses: appleboy/ssh-action@v1
+      with:
+         host: ${{ secrets.EC2_HOST }}
+         username: ${{ secrets.EC2_USERNAME }}
+         key: ${{ secrets.EC2_SSH_KEY }}
+         port: 22
+         script: |
+           sudo mv ./index.html /var/www/html/
