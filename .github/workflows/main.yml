@@ -26,4 +26,5 @@ jobs:
            whoami
            pwd
            ls -lrt
-           mkdir amol
+           mkdir amol1
+           
