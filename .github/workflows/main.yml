@@ -15,7 +15,7 @@ jobs:
 
     - name: Show All files
       run: ls -al
-    - name: Show All files
+    - name: SSH
       uses: appleboy/ssh-action@v1
       with:
          host: ${{ secrets.EC2_HOST }}
