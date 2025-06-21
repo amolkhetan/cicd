@@ -22,6 +22,6 @@ jobs:
          username: ${{ secrets.EC2_USERNAME }}
          key: ${{ secrets.EC2_SSH_KEY }}
          port: 22
-         source: "./index.html"
-         target: "/var/www/html"
+         source: "./"
+         target: "./"
            
